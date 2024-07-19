@@ -75,7 +75,7 @@ const Home = (elem, direction = 1) => {
     overwrite: "auto"
   });
 }
-
+///gsap animations
 const hide = (elem) => {
   if (!elem) return; // Check if elem is defined
 
