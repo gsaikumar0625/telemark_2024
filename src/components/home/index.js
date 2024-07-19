@@ -37,6 +37,7 @@ const Home = (elem, direction = 1) => {
       x: '0%',
       opacity: 0,
       scale: 0,
+      
     }, {
       duration: 2,
       scale: 1,
