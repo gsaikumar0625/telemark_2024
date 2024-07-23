@@ -131,7 +131,7 @@ const AboutComponent = () => {
                 <div className="container">
                   <div className="text-center gs_zoom_in">
                     <h2 className="section-heading text-uppercase text-primaryColor font-extrabold ">About</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 className="section-subheading text-muted">speaks to company history or any other facts about the company. Any information that you guys as founders would like to share? Usually, companies talk about the genesis of the idea or how the founders met and believed in the same purpose or plain old history of the company and milestones achieved so far.</h3>
                   </div>
                   <ul className="timeline">
                     <li>

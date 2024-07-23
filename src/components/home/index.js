@@ -6,9 +6,9 @@ import Slide1 from '../../assests/20230608_112306[68].jpg';
 import Slide2 from '../../assests/20230608_113457[81].jpg';
 import Slide3 from '../../assests/HC-130J.jpeg';
 import Slide4 from '../../assests/pixabay solar-2666770.jpg';
-import Slide5 from '../../assests/20230608_112613[65].jpg';
-import Slide6 from '../../assests/20230608_113454[35].jpg';
-import Slide7 from '../../assests/airforce-airlift-special-mission-aircraft-maintenance-m.jpg';
+import MainSlide1 from '../../assests/C-17 below.jpeg';
+import MainSlide2 from '../../assests/abc.JPG'; 
+import SplitType from 'split-type';
 
 const Home = (elem, direction = 1) => {
   if (!elem) return; // Check if elem is defined
@@ -37,7 +37,7 @@ const Home = (elem, direction = 1) => {
       x: '0%',
       opacity: 0,
       scale: 0,
-      
+
     }, {
       duration: 2,
       scale: 1,
@@ -122,20 +122,75 @@ const HomeComponent = () => {
   }, []);
 
 
+  //heading animation
+
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    if (headingRef.current) {
+      // Split the text
+      const splitInstance = new SplitType(headingRef.current, {
+        types: 'words, chars',
+      });
+
+      const chars = splitInstance.chars;
+
+      // Animate the characters
+      gsap.from(chars, {
+        x: -100,
+        opacity: 0,
+        duration: 2,
+        stagger: 0.1,
+        ease: 'power2.out',
+      });
+    }
+  }, []);
   return (
     <>
-      <div className="home-section">
+      {/* <div className="home-section">
         <div className="overlay"></div>
-        <h4 className='heading text-white gs_reveal gs_reveal_fromBottom'>Continuous tracking for unpowered logistics assets</h4>
+        <h4 className='heading text-white' ref={headingRef}>Continuous tracking for unpowered logistics assets</h4>
         <p className='z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop'>
           Stop wasting energy and money. Join the TelemeTrak revolution and experience <br /> the power of a smarter, more efficient solar system.</p>
-      </div>
+      </div> */}
+
+      <Carousel>
+        <div className="relative w-full">
+          <img
+            src={MainSlide1}
+            alt="image 1"
+            className=""
+          />
+          <div className="absolute bottom-1/2 left-0 p-4 bg-black bg-opacity-50 text-white">
+            <h4 className='heading text-white' ref={headingRef}>Continuous tracking for unpowered logistics assets</h4>
+            <p className='z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop'>
+              Stop wasting energy and money. Join the TelemeTrak revolution and experience <br /> the power of a smarter, more efficient solar system.</p>
+          </div>
+        </div>
+
+        <div className="relative h-full w-full">
+          <img
+            src={MainSlide2}
+            alt="image 2"
+            className=""
+          />
+          <div className="absolute bottom-1/2  left-0 p-4 bg-black bg-opacity-50 text-white">
+          <h4 className='heading text-white'>Continuous tracking for unpowered logistics assets</h4>
+            <p className='z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop'>
+              Stop wasting energy and money. Join the TelemeTrak revolution and experience <br /> the power of a smarter, more efficient solar system.</p>
+          </div>
+        </div>
+
+       
+      </Carousel>
+
+
 
       <div className="gs_zoom_in mx-auto md:max-w-7xl xl:max-w-screen-xl px-12 lg:px-32 p-1 flex justify-center">
         <div>
           <h1 class="text-primaryColor my-12 font-extrabold animate__animated animate__slideInDown" style={{ fontSize: 40 }}>Our Expertise</h1>
         </div>
-      </div> 
+      </div>
 
       <div class="flex-col w-full md:flex-row mx-auto md:max-w-7xl xl:max-w-screen-xl
          px-12 lg:px-32 p-1 flex justify-center">
@@ -208,7 +263,7 @@ const HomeComponent = () => {
           </div>
 
         </div>
-      </div> 
+      </div>
     </>
   )
 }

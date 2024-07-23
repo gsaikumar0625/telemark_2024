@@ -1,6 +1,8 @@
 
 import React from 'react'
 import Heading from '../Heading';
+import Team1 from '../../assests/team1.png'
+import Team2 from '../../assests/team2.png'
 const Team = () => {
   const links = [
     { text: 'Home', url: '/' },
@@ -115,45 +117,26 @@ const Team = () => {
   <div class="flex flex-col gap-6 mt-16">
     <div class="flex flex-col md:flex-row gap-6">
       <div class="w-full lg:w-1/4 rounded-3xl overflow-hidden">
-        <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hanna Lubin" class="w-full h-full object-cover aspect-video lg:aspect-square" />
+        <img src={Team1} alt="Hanna Lubin" class="w-full h-full object-cover aspect-video lg:aspect-square" />
       </div>
       <div class="w-full lg:w-9/12 bg-red-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
-        <h3 class="text-2xl capitalize text-indigo-900 font-semibold">hanna lubin</h3>
-        <span class="inline-block capitalize text-xl text-indigo-900 font-light mt-1.5 mb-5">doctor</span>
-        <p class="text-indigo-900 opacity-75 leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.</p>
+        <h3 class="text-2xl capitalize text-indigo-900 font-semibold">Bjorn-Erik Eklund</h3>
+        <span class="inline-block capitalize text-xl text-indigo-900 font-light mt-1.5 mb-5"> CEO and Co-Founder</span>
+        <p class="text-indigo-900 opacity-75 leading-normal">Bjorn-Erik Eklund, CEO and Co-Founder, has driven all of TelemeTrak’s revenue and raised over $700K in investment capital. He has over 28 years of tech industry experience at Bain & Co., Net Insight (IPO); Nextag (acquired by Providence Equity for $1.1B); Adchemy (acquired by Walmart Labs); Nanigans (acquired by Sprinklr); and Fiksu (acquired by Noosphere).   A licensed Professional Engineer, he once held a NATO SECRET security clearance, and holds engineering degrees from RMC (Canada) and UTC (France), and an MBA from Harvard Business School.</p>
       </div>
     </div>
     <div class="flex flex-col md:flex-row-reverse gap-6">
       <div class="w-full lg:w-1/4 rounded-3xl overflow-hidden">
-        <img src="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Erin Calzoni" class="w-full h-full object-cover aspect-video lg:aspect-square" />
+        <img src={Team2} alt="Erin Calzoni" class="w-full h-full object-cover aspect-video lg:aspect-square" />
       </div>
       <div class="w-full lg:w-9/12 bg-blue-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
-        <h3 class="text-2xl capitalize text-indigo-900 font-semibold">Erin Calzoni</h3>
-        <span class="inline-block capitalize text-xl text-indigo-900 font-light mt-1.5 mb-5">nurse</span>
-        <p class="text-indigo-900 opacity-75 leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.</p>
+        <h3 class="text-2xl capitalize text-indigo-900 font-semibold">Fred Ziegler</h3>
+        <span class="inline-block capitalize text-xl text-indigo-900 font-light mt-1.5 mb-5">CTO and Co-Founder</span>
+        <p class="text-indigo-900 opacity-75 leading-normal">Fred Ziegler, CTO and Co-Founder, is an electronics engineer with extensive experience with hardware, software, and development.  At SRI International, he saved the USAF over $1.12M in a single project and held a SECRET security clearance.  As Napster’s Lead developer, he created the Napster Windows client from the ground up.  He designed and developed event-driven “back-end” music content management that included shared resources management, cross-thread messaging, multithreaded file management, file analysis, file maintenance, and file scan, account management, error logging, database access control, security access control, and dynamic swap out of multithreaded security DLL.  At Ceres Imaging, he successfully led development of company's next generation camera system, designing, and implementing software and electronics, and integrated electrical, optical, and mechanical systems.  Four of Fred’s patents have been issued and he has assigned them all to TelemeTrak.  His best-known publication is Design for Assembly Costs of Printed Circuit Boards, Concurrent Engineering Imperatives, 1996 Chapman & Hall, ISBN 0412787504. </p>
       </div>
     </div>
-    <div class="flex flex-col md:flex-row gap-6">
-      <div class="w-full lg:w-1/4 rounded-3xl overflow-hidden">
-        <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full object-cover aspect-video lg:aspect-square" />
-      </div>
-      <div class="w-full lg:w-9/12 bg-yellow-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
-        <h3 class="text-2xl capitalize text-indigo-900 font-semibold">jenna smith</h3>
-        <span class="inline-block capitalize text-xl text-indigo-900 font-light mt-1.5 mb-5">
-          pediatrician</span>
-        <p class="text-indigo-900 opacity-75 leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.</p>
-      </div>
-    </div>
-    <div class="flex flex-col md:flex-row-reverse gap-6">
-      <div class="w-full lg:w-1/4 rounded-3xl overflow-hidden">
-        <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full object-cover aspect-video lg:aspect-square" />
-      </div>
-      <div class="w-full lg:w-9/12 bg-green-100 rounded-3xl flex flex-col justify-center p-8 lg:p-14">
-        <h3 class="text-2xl capitalize text-indigo-900 font-semibold">christina meyer</h3>
-        <span class="inline-block capitalize text-xl text-indigo-900 font-light mt-1.5 mb-5">psychologist</span>
-        <p class="text-indigo-900 opacity-75 leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.</p>
-      </div>
-    </div>
+    
+    
   </div>
 </section>
     </>

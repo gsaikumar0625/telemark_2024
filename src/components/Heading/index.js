@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import HomeBanner from '../../../src/assests/home_banner_2.jpg'
+import HomeBanner from '../../../src/assests/home_banner_2.jpeg'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
