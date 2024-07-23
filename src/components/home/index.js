@@ -6,8 +6,8 @@ import Slide1 from '../../assests/20230608_112306[68].jpg';
 import Slide2 from '../../assests/20230608_113457[81].jpg';
 import Slide3 from '../../assests/HC-130J.jpeg';
 import Slide4 from '../../assests/pixabay solar-2666770.jpg';
-import MainSlide1 from '../../assests/C-17 below.jpeg';
-import MainSlide2 from '../../assests/abc.JPG'; 
+import MainSlide1 from '../../assests/slide1.png';
+import MainSlide2 from '../../assests/slide2.png';
 import SplitType from 'split-type';
 
 const Home = (elem, direction = 1) => {
@@ -153,38 +153,48 @@ const HomeComponent = () => {
         <p className='z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop'>
           Stop wasting energy and money. Join the TelemeTrak revolution and experience <br /> the power of a smarter, more efficient solar system.</p>
       </div> */}
-
-      <Carousel>
-        <div className="relative w-full">
-          <img
-            src={MainSlide1}
-            alt="image 1"
-            className=""
-          />
-          <div className="absolute bottom-1/2 left-0 p-4 bg-black bg-opacity-50 text-white">
-            <h4 className='heading text-white' ref={headingRef}>Continuous tracking for unpowered logistics assets</h4>
-            <p className='z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop'>
-              Stop wasting energy and money. Join the TelemeTrak revolution and experience <br /> the power of a smarter, more efficient solar system.</p>
+      <div>
+        <Carousel>
+          <div className="relative w-full h-full">
+            <img
+              src={MainSlide1}
+              alt="image 1"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex flex-col justify-self-end items-center bg-black bg-opacity-50 text-white p-4">
+              <h4 className="heading text-white" ref={headingRef}>
+                Continuous tracking for unpowered logistics assets
+              </h4>
+              <p className="z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop text-left">
+                Stop wasting energy and money. Join the TelemeTrak revolution and experience
+                <br />
+                the power of a smarter, more efficient solar system.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="relative h-full w-full">
-          <img
-            src={MainSlide2}
-            alt="image 2"
-            className=""
-          />
-          <div className="absolute bottom-1/2  left-0 p-4 bg-black bg-opacity-50 text-white">
-          <h4 className='heading text-white'>Continuous tracking for unpowered logistics assets</h4>
-            <p className='z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop'>
-              Stop wasting energy and money. Join the TelemeTrak revolution and experience <br /> the power of a smarter, more efficient solar system.</p>
+
+          <div className="relative h-full w-full">
+            <img
+              src={MainSlide2}
+              alt="image 2"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex flex-col justify-self-end items-center bg-black bg-opacity-50 text-white p-4">
+              <h4 className="heading text-white">
+                Continuous tracking for unpowered logistics assets
+              </h4>
+              <p className="z-[1] text-white font-semibold w-[70%] mt-8 text-[24px] leading-[37px] gs_reveal gs_reveal_fromTop text-left">
+                Stop wasting energy and money. Join the TelemeTrak revolution and experience
+                <br />
+                the power of a smarter, more efficient solar system.
+              </p>
+            </div>
+
           </div>
-        </div>
+        </Carousel>
 
-       
-      </Carousel>
-
-
+      </div>
 
       <div className="gs_zoom_in mx-auto md:max-w-7xl xl:max-w-screen-xl px-12 lg:px-32 p-1 flex justify-center">
         <div>
@@ -241,7 +251,7 @@ const HomeComponent = () => {
 
           <div className='sm:w-1/2'>
 
-            <div className='shadow-custom gs_reveal gs_reveal_fromTop px-3 py-4'>
+            <div className='shadow-custom px-3 py-4'>
               <p className='text-primaryColor text-2xl pb-2 font-bold'>Solar Optimization</p>
               <p className='whitespace-normal font-medium'>Optimize Your Solar with TelemeTrak's Innovative
                 Buffering Technology...</p>
